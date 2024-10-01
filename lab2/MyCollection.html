@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миний цуглуулга: Цаг & Машин</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif; 
+            background-color: #f8f4e3; 
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #3d3d3d;
+            padding: 15px;
+            border-bottom: 5px solid #d4af37; 
+        }
+
+        nav a {
+            color: #d4af37; 
+            padding: 10px 20px; 
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff; 
+            background-color: #4b4b4b;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            border: 1px solid #d4af37; 
+        }
+
+        h1 {
+            text-align: center;
+            color: #3d3d3d; 
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-transform: uppercase; 
+            font-weight: bold; 
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        th {
+            background-color: #d4af37; 
+            color: #3d3d3d; 
+            text-align: left;
+            padding: 15px;
+            font-size: 1.2rem;
+            border: 2px solid #3d3d3d; 
+        }
+
+        td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #ddd;
+            color: #34495e;
+        }
+
+        td:first-child {
+            font-weight: bold;
+            width: 30%;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1; 
+        }
+
+        
+        @media only screen and (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            td, th {
+                font-size: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="Untitled-2.html" onclick="showPage('page1')">1: Миний танилцуулга</a>
+        <a href="about-pet.html" onclick="showPage('page2')">2: Миний Тэжээвэр Амьтан</a>
+        <a href="Myhobby.html" onclick="showPage('page3')">3: Миний хобби</a>
+        <a href="MyCollection.html" onclick="showPage('page4')">4: Миний цуглуулга</a>
+        <a href="Myclasstable.html" onclick="showPage('page5')">5: Миний хичээлийн хуваарь</a>
+    </nav>
+    <div class="container">
+        <h1>Миний цуглуулга: Цаг & Машин</h1>
+        <table>
+            <tr>
+                <th>Зүйл</th>
+                <th>Зураг</th>
+                <th>Тайлбар</th>
+            </tr>
+            <tr>
+                <td>Rolex Submariner</td>
+                <td><img src="rolexsub.webp" alt="Rolex Submariner" width="100"></td>
+                <td>Хүчирхэг харагдуулах цаг, усны хамгаалалттай.</td>
+            </tr>
+            <tr>
+                <td>Patek Philippe Nautilus</td>
+                <td><img src="patek.jpg" alt="Patek Philippe Nautilus" width="100"></td>
+                <td>Тансаг, нарийн загвар,хувиргагчтай.</td>
+            </tr>
+            <tr>
+                <td>Ferrari 488</td>
+                <td><img src="ferrari.jpg" alt="Ferrari 488" width="100"></td>
+                <td>Технологи, хурд, гоёмсог дизайн.</td>
+            </tr>
+            <tr>
+                <td>Rolls Royce Phantom</td>
+                <td><img src="rolls.jpg" alt="Rolls Royce Phantom" width="100"></td>
+                <td>Тансаг хэрэглээ, олон онцлог.</td>
+            </tr>
+            <p>Эхний хуудас руу буцахыг хүсвэл <a href="lab1.html">энд дарна уу</a>.</p>
+          </table>
+    </div>
+    
+</body>
+</html>

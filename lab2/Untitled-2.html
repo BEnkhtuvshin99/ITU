@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миний танилцуулга</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #3498db;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            background-color: #2980b9;
+            border-radius: 5px;
+        }
+        .profile-section {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .profile-photo {
+            flex: 1;
+            text-align: center;
+        }
+        .profile-photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #3498db;
+        }
+        .profile-info {
+            flex: 2;
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th {
+            background-color: #3498db;
+            color: #fff;
+            text-align: left;
+            padding: 15px;
+            font-size: 1.2rem;
+        }
+        td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #ddd;
+            color: #34495e;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        td:first-child {
+            font-weight: bold;
+            width: 30%;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        @media only screen and (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            td, th {
+                font-size: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-info {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="Untitled-2.html" onclick="showPage('page1')">1: Миний танилцуулга</a>
+        <a href="about-pet.html" onclick="showPage('page2')">2: Миний Тэжээвэр Амьтан</a>
+        <a href="Myhobby.html" onclick="showPage('page3')">3: Миний хобби</a>
+        <a href="MyCollection.html" onclick="showPage('page4')">4: Миний цуглуулга</a>
+        <a href="Myclasstable.html" onclick="showPage('page5')">5: Миний хичээлийн хуваарь</a>
+    </nav>
+
+    <div class="container">
+        <h1>Миний танилцуулга</h1>
+
+        <div class="profile-section">
+            <div class="profile-photo">
+                <img src="../assets/anu viz.jpg" alt="Profile Photo">
+            </div>
+            <div class="profile-info">
+                <table>
+                    <tr>
+                        <th colspan="2">Хувийн Мэдээлэл</th>
+                    </tr>
+                    <tr>
+                        <td>Нэр:</td>
+                        <td>Энхтүвшин</td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td>b.enkhtuvshin99@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Утасны дугаар:</td>
+                        <td>+97680939348</td>
+                    </tr>
+                    <tr>
+                        <td>Хаяг:</td>
+                        <td>Гэрийн хаяг тодорхойгүй.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th colspan="2">Боловсрол</th>
+            </tr>
+            <tr>
+                <td>2020 - 2024</td>
+                <td>Хэрэглээний Математик, МУИС</td>
+            </tr>
+            <tr>
+                <td>2022-2026</td>
+                <td>Программ Хангамж, МУИС</td>
+            </tr>
+            
+            <tr>
+                <th colspan="2">Ажлын Туршлага</th>
+            </tr>
+            <tr>
+                <td>2022-Одоо</td>
+                <td>Судлаач оюутан, Математик Хэрэглээ төв<br> 
+                    Үүрэг: Судалгааны материал уншиж танилцах, тайлан бэлтгэх, анализ хийх, дата бэлтгэх
+                </td>
+            </tr>
+            <tr>
+                <td>2024.01-2024.01</td>
+                <td>Дата сайнтист<br>
+                    Үүрэг: Дата цэвэрлэх, дата эмхэтгэл хийх, модель загварчлах, веб сайт хийх
+                </td>
+            </tr>
+            
+            <tr>
+                <th colspan="2">Ур чадвар</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ul>
+                        <li>Программ: Python, R, MATLAB</li>
+                        <li>Машин сургалт</li>
+                        <li>Дата анализ</li>
+                        <li>Математик загварчлал</li>
+                    </ul>
+                </td>
+            </tr>
+            
+            <tr>
+                <th colspan="2">Төслүүд</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <strong>Tooth Caries Segmentation</strong><br>
+                    Тодорхойлолт: Фото зургаас шүдний цооролыг ангилж ялган таних
+                </td>
+            </tr>
+            
+            <tr>
+                <th colspan="2">Хэл</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ul>
+                        <li>Монгол</li>
+                        <li>Англи хэл</li>
+                        <li>Япон</li>
+                        <li>Герман</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <p>Эхний хуудас руу буцахыг хүсвэл <a href="../main.html">энд дарна уу</a>.</p>
+    </div>
+
+</body>
+</html>

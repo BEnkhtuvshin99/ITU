@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миний Хобби: Сагсан Бөмбөг</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #101010; 
+            margin: 0;
+            padding: 0;
+            color: #ffffff; 
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #1a1a1a; 
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7); 
+            border-radius: 15px;
+        }
+        h1 {
+            text-align: center;
+            color: #ffd700; 
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #28a745; 
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: background-color 0.3s, transform 0.3s; 
+        }
+        nav a:hover {
+            background-color: #218838; 
+            border-radius: 5px;
+            transform: scale(1.05); 
+        }
+        .highlight {
+            background-color: rgba(40, 167, 69, 0.8); 
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #101010; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th {
+            background-color: #ffd700;
+            color: #101010; 
+            text-align: left;
+            padding: 15px;
+            font-size: 1.2rem;
+            border-bottom: 2px solid #ffffff;
+        }
+        td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #444;
+            color: #ffffff; 
+            background-color: rgba(255, 255, 255, 0.1); 
+        }
+        tr:hover {
+            background-color: rgba(44, 44, 44, 0.8); 
+        }
+        @media only screen and (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            td, th {
+                font-size: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="Untitled-2.html" onclick="showPage('page1')">1: Миний танилцуулга</a>
+        <a href="about-pet.html" onclick="showPage('page2')">2: Миний Тэжээвэр Амьтан</a>
+        <a href="Myhobby.html" onclick="showPage('page3')">3: Миний хобби</a>
+        <a href="MyCollection.html" onclick="showPage('page4')">4: Миний цуглуулга</a>
+        <a href="Myclasstable.html" onclick="showPage('page5')">5: Миний хичээлийн хуваарь</a>
+    </nav>
+
+    <div class="container">
+        <h1>Миний Хобби: Сагсан Бөмбөг</h1>
+
+        <div class="highlight">
+            Сагсан бөмбөг бол миний хамгийн дуртай хобби юм. Би тоглоход үнэхээр дуртай!
+        </div>
+
+        <table>
+            <tr>
+                <th colspan="2">Сагсан Бөмбөгийн Мэдээлэл</th>
+            </tr>
+            <tr>
+                <td>Дэмждэг багийн нэр:</td>
+                <td>Miami Heat</td>
+            </tr>
+            <tr>
+                <td>Тоглоомын Тогтвор:</td>
+                <td>7 хоногт тогтмол 2 удаа.</td>
+            </tr>
+            <tr>
+                <td>Тоглоомын Талаар:</td>
+                <td>Сагсан бөмбөг нь хоёр багийн 5 тоглогч хооронд тоглодог.</td>
+            </tr>
+            <tr>
+                <td>Төгсгөл:</td>
+                <td>Би тэмцээнд оролцож, олон найзтай болсон!</td>
+            </tr>
+        </table>
+        
+        <table>
+            <tr>
+                <th colspan="2">Миний Хобби</th>
+            </tr>
+            <tr>
+                <td>Сагсан бөмбөгийн Тэмцээн:</td>
+                <td>Би жил бүр сагсан бөмбөгийн тэмцээнд оролцдог.</td>
+            </tr>
+            <tr>
+                <td>Тоглолтын Туршлага:</td>
+                <td>2015 оноос хойш Алтан-Стандар багт тоглож байгаа.</td>
+            </tr>
+        </table>
+        <p>Эхний хуудас руу буцахыг хүсвэл <a href="lab1.html">энд дарна уу</a>.</p>
+    </div>
+</body>
+</html>

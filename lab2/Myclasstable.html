@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миний Хичээлийн Хуваарь - МУИС</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f8f0;
+            margin: 0;
+            padding: 0;
+            color: #3b3b3b;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+        }
+        h1 {
+            text-align: center;
+            color: #3b3b3b;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333333;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #d3c6a6;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: 0 10px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #555555;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th {
+            background-color: #d3c6a6;
+            color: #3b3b3b;
+            text-align: left;
+            padding: 15px;
+            font-size: 1.2rem;
+        }
+        td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #ddd;
+            color: #3b3b3b;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        @media only screen and (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            nav a {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="Untitled-2.html" onclick="showPage('page1')">1: Миний танилцуулга</a>
+        <a href="about-pet.html" onclick="showPage('page2')">2: Миний Тэжээвэр Амьтан</a>
+        <a href="Myhobby.html" onclick="showPage('page3')">3: Миний хобби</a>
+        <a href="MyCollection.html" onclick="showPage('page4')">4: Миний цуглуулга</a>
+        <a href="Myclasstable.html" onclick="showPage('page5')">5: Миний хичээлийн хуваарь</a>
+    </nav>
+
+    <div class="container">
+        <h1>МУИС-ийн Хичээлийн Хуваарь</h1>
+        <table>
+            <tr>
+                <th>Хичээл</th>
+                <th>Багш</th>
+                <th>Өдөр</th>
+                <th>Цаг</th>
+                <th>Хичээлийн Байр</th>
+            </tr>
+            <tr>
+                <td>Программчлал</td>
+                <td>С. Батжаргал</td>
+                <td>Даваа</td>
+                <td>10:00 - 11:30</td>
+                <td>7-204</td>
+            </tr>
+            <tr>
+                <td>Математик</td>
+                <td>Д. Тэмүүлэн</td>
+                <td>Мягмар</td>
+                <td>12:00 - 13:30</td>
+                <td>8-103</td>
+            </tr>
+            <tr>
+                <td>Дата Анализ</td>
+                <td>Г. Нарантуяа</td>
+                <td>Лхагва</td>
+                <td>14:00 - 15:30</td>
+                <td>3-101</td>
+            </tr>
+            <tr>
+                <td>Машин Сургалт</td>
+                <td>Л. Уянга</td>
+                <td>Пүрэв</td>
+                <td>16:00 - 17:30</td>
+                <td>1-330</td>
+            </tr>
+            <tr>
+                <td>Математик Загварчлал</td>
+                <td>М. Энхсайхан</td>
+                <td>Бямба</td>
+                <td>09:00 - 10:30</td>
+                <td>5-405b</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

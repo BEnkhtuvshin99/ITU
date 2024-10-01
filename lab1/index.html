@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Б.Энхтүвшин</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(207, 100, 196, 0.1);
+            display: none; 
+        }
+        h1, h2 {
+            color: #3b99bf;
+        }
+        .section-title {
+            border-bottom: 2px solid #9fba57;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills li {
+            flex: 1 1 30%;
+            background-color: #eee;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 10px;
+            padding: 10px;
+            background: color #7e3b3b;;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" onclick="showPage('page1')"> 1: Сонирхол</a>
+        <a href="#" onclick="showPage('page2')">2: Боловсрол</a>
+        <a href="#" onclick="showPage('page3')">3: Ажлын туршлага</a>
+        <a href="#" onclick="showPage('page4')">4: Ур чадвар</a>
+        <a href="#" onclick="showPage('page5')">5: Төсөл</a>
+    </nav>
+
+    
+    <div id="page1" class="container">
+        <header>
+            <h1>Б.Энхтүвшин</h1>
+            <div class="contact-info">
+                <p>Email: b.enkhtuvshin99@gmail.com</p>
+                <p>Phone: 80939348</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/enkhtuvshin-bat-ochir-534948256/">yourprofile</a></p>
+                <p>GitHub: <a href="https://github.com/BEnkhtuvshin99">yourgithub</a></p>
+            </div>
+        </header>
+
+        <section class="summary">
+            <h2 class="section-title">Сонирхол</h2>
+            <p>Чөлөө цагаараа шатар тоглож, код бичих сонирхолтой.</p>
+        </section>
+    </div>
+
+    
+    <div id="page2" class="container">
+        <section class="education">
+            <h2 class="section-title">Боловсрол</h2>
+            <ul>
+                <li>
+                    <strong>Хэрэглээний математик</strong><br>
+                    Монгол Улсын Их Сургууль, 2024 он<br>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    
+    <div id="page3" class="container">
+        <section class="experience">
+            <h2 class="section-title">Ажлын туршлага</h2>
+            <ul>
+                <li>
+                    <strong>Судлаач оюутан</strong> - Математик Хэрэглээ төв<br>
+                    Монгол Улсын Их Сургууль, 2022.05 - Одоо<br>
+                    Машин сургалт, түүнийг ашиглан хэрэглээнд нийцсэн программ хангамжийг зохион бий болгох.
+                </li>
+                <li>
+                    <strong>Дадлага</strong> - Өгөгдлийн Шинжлэх Ухаан<br>
+                    Оюу-Толгой, 2023 он<br>
+                    Өгөгдсөн датанаас шаардлагын дагуу анализ гарган авахын тулд өгөгдсөн датаг цэвэрлэх, дүн шинжилгээ хийж гарган авах. 
+                </li>
+            </ul>
+        </section>
+    </div>
+
+   
+    <div id="page4" class="container">
+        <section class="skills">
+            <h2 class="section-title">Ур чадвар</h2>
+            <ul>
+                <li>Machine Learning</li>
+                <li>Data Science</li>
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>Статистик</li>
+                <li>Data Visualization</li>
+                <li>Математик Загварчлал</li>
+            </ul>
+        </section>
+    </div>
+
+   
+    <div id="page5" class="container">
+        <section class="projects">
+            <h2 class="section-title">Төсөл</h2>
+            <ul>
+                <li>
+                    <strong>Tooth Caries Segmentation-Бага насны хүүүхдийн шүдний цооролыг илрүүлэх</strong><br>
+                    Машин сургалт ашиглан бага насны хүүхдийн цоорлыг өнгөт зургаас танин илрүүлэх.
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        
+        function showPage(pageId) {
+            
+            var pages = document.getElementsByClassName('container');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].style.display = 'none';
+            }
+            
+            document.getElementById(pageId).style.display = 'block';
+        }
+
+        
+        window.onload = function() {
+            showPage('page1');
+        };
+    </script>
+
+</body>
+</html> 
