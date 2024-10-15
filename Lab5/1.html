@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .header1 {
+            background-color: #352BA5;
+            height: 30px;
+        }
+
+        .header1 h4 {
+            margin-left: 20px;
+            font-size: 14px;
+            padding: 10px 0;
+            color: white;
+        }
+
+        .header2 {
+            width: 100%;
+            background-color: #13124f;
+            padding: 20px;
+        }
+
+        .header2 h3 {
+            font-size: 50px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .header2 p {
+            font-size: 16px;
+            color: #e0e0e0;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .header2 button {
+            background-color: #F61067;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .container {
+            display: flex;
+            margin: 40px auto;
+            max-width: 1200px;
+            width: 90%;
+        }
+
+        .Main {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .Main h1 {
+            font-size: 40px;
+            margin-top: 30px;
+        }
+
+        .Main p {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .alert {
+            padding: 20px;
+            background-color: #9090a5;
+            color: white;
+            margin: 15px 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #13124f;
+            color: white;
+        }
+
+        aside {
+            width: 400px;
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 0px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 0px;
+        }
+
+        .aside-container {
+            display: flex;
+            flex-direction: column;
+          
+        }
+
+        .aside-container p {
+            text-align: center;
+            color: white;
+        }
+
+        .Welcome {
+            background-color: grey;
+            color: white;
+        }
+
+        .Welcome h1 {
+            color: white;
+            font-size: 24px;
+        }
+
+        .Input {
+            background-color: #13124f;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .Input p {
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .inputer {
+            background-color: #352BA5;
+            color: #9090a5;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+        }
+
+        .Send {
+            background-color: #F61067;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .StarTrek {
+            background-color: #352BA5;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .StarTrek a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .Message {
+            margin-bottom: 20px;
+            background-color: #F61067;
+            color: white;
+        }
+
+        .Vote {
+            background-color: white;
+            margin-top: 20px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+            padding: 30px;
+        }
+
+        .Vote p {
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .COOL, .LAME {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .COOL {
+            background-color: #F61067;
+            color: white;
+        }
+
+        .LAME {
+            background-color: white;
+            color: #2ad392;
+            border: 1px solid #2ad392;
+        }
+
+        .Progress {
+            width: 100%;
+            height: 5px;
+            appearance: none;
+            margin-bottom: 20px;
+        }
+
+        .Progress::-webkit-progress-bar {
+            background-color: #2ad392;
+        }
+
+        .Progress::-webkit-progress-value {
+            background-color: #F61067;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .Main {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            aside {
+                width: 100%;
+            }
+
+            iframe {
+                width: 100%;
+                height: 56.25vw;
+                max-height: 415px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header2 h3 {
+                font-size: 32px;
+            }
+
+            .header2 p {
+                font-size: 14px;
+            }
+
+            .Main h1 {
+                font-size: 32px;
+            }
+
+            .alert {
+                width: 100%;
+            }
+
+            .aside-container {
+                width: 100%;
+            }
+
+            .Input p, .inputer, .Send {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header2 h3 {
+                font-size: 24px;
+            }
+
+            .header2 p {
+                font-size: 12px;
+            }
+
+            .Main h1 {
+                font-size: 24px;
+            }
+
+            .Main p {
+                font-size: 14px;
+            }
+
+            .header1 h4 {
+                font-size: 12px;
+            }
+
+            .button-container {
+                flex-direction: column;
+            }
+
+            .COOL, .LAME {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header1">
+        <h4>Webjunto</h4>
+    </div>
+    <div class="header2">
+        <h3>Hello, world!</h3>
+        <p>Welcome to Bootstrap v.3.3.7. Check out this awesome jumbotron!</p>
+        <button>LEARN MORE</button>
+    </div>
+    <div class="container">
+        <div class="Main">
+            <div class="MainText">
+                <h1>Heading goes here</h1>
+                <p>Cupcake ipsum dolor sit amet tart. Cake dessert pie fruitcake shortbread. 
+                    Dessert muffin gummies fruitcake jelly beans gummi bears. Cake jujubes soufflé cookie chocolate cake chocolate bar soufflé.
+                    Danish apple pie halvah apple pie jelly marshmallow chocolate cake jelly-o apple pie. 
+                    Tart biscuit cotton candy donut oat cake liquorice gummi bears chocolate bar. 
+                    Powder chocolate cake tart sweet roll biscuit carrot cake. Jelly beans candy chocolate cake sweet sweet lollipop sugar plum. 
+                    Cookie gingerbread cake fruitcake caramels oat cake cookie macaroon donut. 
+                    Cake marshmallow shortbread powder sesame snaps jujubes sesame snaps pastry.
+                </p>
+                <iframe width="100%" height="415" src="https://www.youtube.com/embed/kUMe1FH4CHE?si=V8UzusvrtPaXZCmI" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                    <strong>Whoa!</strong> This is a super important alert!
+                </div>
+            </div>
+        </div>
+        <div class="aside-container">
+            <aside class="Message">
+                <p>Message</p>
+            </aside>
+            <aside class="Welcome">
+                <h1>Welcome Candidate!</h1>
+            </aside>
+            <aside class="Input">
+                <p>You are a Starfleet Academy candidate. Greet the Captain in respectful fashion.</p>
+                <input type="text" class="inputer" placeholder="Input your greeting...">
+                <button class="Send">SEND</button>
+            </aside>
+            <aside class="StarTrek">
+                <a href="https://www.startrek.com/en-un">I don't watch Star Trek and don't get this reference</a>
+            </aside>
+            <aside class="Vote">
+                <p>Cast your vote! What do you think about space? See vote progress bar below!</p>
+                <progress class="Progress" value="80" max="100"></progress>
+                <div class="button-container">
+                    <button class="COOL">COOL</button>
+                    <button class="LAME">LAME</button>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <div class="footer">
+        <p>2017 All Rights Reserved, SomeCompany</p>
+    </div>
+</body>
+</html>
