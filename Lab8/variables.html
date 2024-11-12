@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Variables</title>
+</head>
+<body>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #e0f7fa;
+    }
+
+    .colorful-button {
+      padding: 16px 36px;
+      font-size: 18px;
+      color: white;
+      background: linear-gradient(45deg, #ff6f61, #ffcc00);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .colorful-button:hover {
+      background: linear-gradient(45deg, #ffcc00, #ff6f61);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .colorful-button:active {
+      transform: translateY(2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <button onclick="loadScript('./problem1.js')">Problem 1</button><br>
+  <button onclick="loadScript('./problem2.js')">Problem 2</button><br>
+  <button onclick="loadScript('./problem3.js')">Problem 3</button><br>
+  <button onclick="loadScript('./problem4.js')">Problem 4</button><br>
+  <button onclick="loadScript('./problem5.js')">Problem 5</button><br>
+  
+
+
+  <script>
+    function loadScript(src) {
+      const script = document.createElement("script");
+      script.src = src;
+      script.onload = () => console.log(`${src} loaded successfully!`);
+      script.onerror = () => console.error(`Error loading ${src}. Check the file path.`);
+      document.body.appendChild(script);
+    }
+  </script>
+</body>
+</html>
