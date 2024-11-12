@@ -26,6 +26,6 @@ let number=prompt("Ta ailiin tootiig oruulna uu:");
             floor=parseInt(counter/4)+1;
           }
           else{
-            floor=parseInt(counter/4);
+            floor=9;
           }
           alert('Орц: ' + entrance + '\nДавхар: ' + floor + '\nХаалга: ' + door + ' дахь хаалга');
