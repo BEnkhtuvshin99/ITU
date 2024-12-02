@@ -40,7 +40,7 @@ do {
   numbers = input.split(",").map(num => parseInt(num.trim()));
 
   if (numbers.length !== 5 || numbers.some(isNaN)) {
-      alert("Please enter exactly 5 valid numbers.");
+      alert("Яг 5 тоо оруулна уу.");
       numbers = null;
   }
 } while (!numbers);
