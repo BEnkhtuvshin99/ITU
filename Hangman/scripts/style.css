@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.Image {
+    display: block;
+    width: 100%;
+}
+
+.Question, .Instructions {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.Question {
+    margin-bottom: 10px; /* Adjust space between Question and Instructions */
+}
+
+.LettersGuessed {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.LivesRemaining {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  .AskWord {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+  
+  .GameContent {
+    display: none; /* Hide the game content until the player starts the game */
+  }
+    
