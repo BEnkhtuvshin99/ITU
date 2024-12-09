@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="Container">
+    <div class="Image">
+      <img id="hangmanImage" src="../assets/Hangman-0.png" alt="Hangman Image">
+    </div>
+    <div class="Question">
+      <p id="question"></p>
+    </div>
+    <div class="Question">
+      <p id="Field">_ _ _ _ _</p>
+    </div>
+    <div class="Instructions">
+      <p>Guess the letters of the word!</p>
+    </div>
+    <div class="LivesLeft">
+      <p>Remaining Attempts: <span id="LivesLeft">5</span></p>
+    </div>
+    <div class="LettersGuessed">
+      <p>Guessed Letters: <span id="guessedLetters"></span></p>
+    </div>
+    <div class="UserInput">
+      <input type="text" id="letterInput" maxlength="1" placeholder="Guess a letter">
+      <button onclick="guessLetter()">Guess</button>
+    </div>
+  </div>
+  <script src="hangman.js"></script>
+</body>
+</html>

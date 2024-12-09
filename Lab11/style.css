@@ -1,0 +1,140 @@
+body {
+  font-family: 'Georgia', serif;
+  margin: 5;
+  padding: 5;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #2a2a2a;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+#news-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.news-item {
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px 0;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.news-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.news-item h3 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.news-item p {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.news-item a {
+  text-decoration: none;
+  color: #2980b9;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.news-item a:hover {
+  color: #1abc9c;
+  text-decoration: underline;
+}
+
+#news-detail {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#news-detail img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#news-detail h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'Georgia', serif;
+  color: #2c3e50;
+}
+
+#news-detail p {
+  font-size: 18px;
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+#news-detail a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#news-detail a:hover {
+  color: #1abc9c;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px 0;
+    font-size: 20px;
+  }
+
+  .news-item {
+    padding: 15px;
+    width: 90%;
+  }
+
+  #news-detail {
+    padding: 20px;
+  }
+
+  .news-item h3 {
+    font-size: 24px;
+  }
+
+  #news-detail h1 {
+    font-size: 30px;
+  }
+
+  #news-detail p {
+    font-size: 16px;
+  }
+}

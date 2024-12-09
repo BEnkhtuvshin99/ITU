@@ -22,10 +22,9 @@ const resetGame = () =>{
   keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled=false);
   wordDisplay.innerHTML = Answer.split("").map(() => `<li class="Letter"></li>`).join("");
   GameOver.classList.remove("show");
-
 }
 
-const getRandomWord = () => {
+const StartGame = () => {
   const {word, hint}=AnswerWithQuestion[Math.floor(Math.random()* AnswerWithQuestion.length)];
   Answer=word;
   console.log(word);
@@ -38,7 +37,7 @@ const gameOver = (isvictory) => {
   const modalText = isvictory ? `Та амжилттай таалаа: ` : `Хариулт бол:`;
   GameOver.querySelector("img").src = `../assets/${isvictory ? 'victory' : 'gameover'}.gif`;
   GameOver.querySelector("h4").innerText = `${isvictory ? 'Баяр Хүргэе' : 'Тоглоом Дууслаа'}`;
-  GameOver.querySelector("p").innerHTML = `${modalText} <b>${Answer}</b>`;
+  GameOver.querySelector("p").innerText = `${modalText} <b>${Answer}</b>`;
   GameOver.classList.add("show");
 };
 
@@ -74,5 +73,5 @@ for (let i=97; i<=122; i++ ){
   button.addEventListener("click", e=> initGame(e.target,String.fromCharCode(i)));
 }
 
-getRandomWord();
-PlayAgain.addEventListener("click",getRandomWord);
+StartGame();
+PlayAgain.addEventListener("click",StartGame);

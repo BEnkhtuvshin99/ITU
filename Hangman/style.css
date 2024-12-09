@@ -1,138 +1,91 @@
-*{
-  margin: 5;
-  box-sizing: border-box;
-  padding: 0;
-}
-body{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background:#40E0D0;
-  padding: 10px 10px;
-  margin: 10px;
-}
-.Container {
-  width: 850px;
-  background: #87CEEB;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 50px;
-  border-radius: 20px;
-  padding: 60px 40px;
-}
-
-.MainGame img {
-max-width: 270px;
-}
-
-.MainGame h1{
-  font-size: medium;
-}
-.Scripts{
-  display: flex;
-  gap: 8px;
-  list-style: none;
-  align-items: center;
-  justify-content: center;
-}
-.Scripts .Letter{
-  width:30px;
-  border-bottom: 5px solid #000;
-  margin-bottom: 20px;
-  font-size: 30px;
-  text-transform: uppercase;
-  text-align: center;
-
-}
-.Script .Letter.selected{
-  border-color: transparent;
-  margin: -40px 0 35px;
-}
-.MainGame .Score b{
-  color:#ff0000;
-}
-.MainGame .Keyboard{
-  display: flex;
-  gap: 5px;
-  flex-wrap: wrap;
-  justify-content: center;
-
-}
-.Keyboard button[disabled]{
-  opacity:0.6;
-  pointer-events: none;
-}
-:where(.gameover, .Keyboard) button{
-  text-transform: uppercase;
-  outline: none;
-  cursor: pointer;
-  font-size: 25px;
-  background-color: rgb(219, 11, 219);
-
-}
-.Keyboard button{
-  width: calc(100% / 9 - 5px);
-  padding: 10px;
-
-}
-:where(.gameover, .Keyboard) button:hover{
-  background-color: red;
-}
-.gameover{
-  position: fixed;
-  left:0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(red, green, blue, alpha) ;
-  align-items: center;
-  display: flex;
-  opacity: 0;
-  pointer-events: none;
-  z-index: 999;
-  justify-content: center;
-  transition: opacity 0.4s ease;
-  padding: 0 10px;
-}
-.gameover.show{
-  opacity: 1;
-  pointer-events: auto;
-  
-}
-.gameover img{
-  max-width: 200px;
-  width: 200px;
-  height: 400;
-  margin-bottom: 20px;
-}
-.gameover .context{
- background-color: white;
- max-width: 420px;
- width: 100%;
- text-align: center;
- border-radius: 10px;
- padding: 30px;
-}
-.gameover h4{
-  font-size: 50px;
-}
-.gameover button{
-  padding: 12px 23px;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
   }
-  @media(max-width:782px){
-    .Container{
-      flex-direction: column;
-      padding: 30px 15px;
-      align-items: center;
+  
+  .Container {
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  .Question, .Instructions, .LivesLeft, .LettersGuessed {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .Question p, .Instructions p, .LivesLeft p, .LettersGuessed p {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .UserInput {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .UserInput input {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #333;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .UserInput button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .UserInput button:hover {
+    background-color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .Container {
+      width: 95%;
+      padding: 15px;
     }
-    .Keyboard button{
-      display: flex;
-      justify-content: center;
-    }
-    .BoxforHangman img{
+  
+    .Image img {
       max-width: 200px;
     }
-    
+  
+    .UserInput input {
+      width: 150px;
+    }
   }
+  
