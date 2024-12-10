@@ -1,19 +1,22 @@
 function fetchRSSFeed() {
     const xhr = new XMLHttpRequest();
-    const rssUrl = "rss.xml";
+    const rssUrl = "https://api.allorigins.win/raw?url=https://ikon.mn/rss";
     xhr.open("GET", rssUrl, true);
     xhr.onload = function () {
         if (xhr.status === 200) {
             const parser = new DOMParser();
             const xmlDoc = parser.parseFromString(xhr.responseText, "application/xml");
             displayNewsItems(xmlDoc);
+        } else {
+            console.error(`Failed to fetch RSS feed. Status: ${xhr.status} - ${xhr.statusText}`);
         }
     };
     xhr.onerror = function () {
-        console.error("Хүсэлт амжилтгүй.");
+        console.error("Network error occurred while fetching the RSS feed.");
     };
     xhr.send();
 }
+
 
 function displayNewsItems(xmlDoc) {
     const items = xmlDoc.querySelectorAll("item");
@@ -44,7 +47,7 @@ function fetchNewsDetails() {
         return;
     }
     const xhr = new XMLHttpRequest();
-    const rssUrl = "rss.xml";
+    const rssUrl = "https://ikon.mn/rss";
     xhr.open("GET", rssUrl, true);
     xhr.onload = function () {
         if (xhr.status === 200) {
