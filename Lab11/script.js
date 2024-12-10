@@ -40,7 +40,7 @@ function fetchNewsDetails() {
     const params = new URLSearchParams(window.location.search);
     const newsId = params.get("id");
     if (!newsId) {
-        document.getElementById("news-detail").textContent = "No news item selected.";
+        document.getElementById("news-detail").textContent = "Мэдээ сонгогдсонгүй.";
         return;
     }
     const xhr = new XMLHttpRequest();
