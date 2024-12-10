@@ -47,7 +47,7 @@ function fetchNewsDetails() {
         return;
     }
     const xhr = new XMLHttpRequest();
-    const rssUrl = "https://ikon.mn/rss";
+    const rssUrl = "https://api.allorigins.win/raw?url=https://ikon.mn/rss";
     xhr.open("GET", rssUrl, true);
     xhr.onload = function () {
         if (xhr.status === 200) {
