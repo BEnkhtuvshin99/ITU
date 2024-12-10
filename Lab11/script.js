@@ -10,7 +10,7 @@ function fetchRSSFeed() {
         }
     };
     xhr.onerror = function () {
-        console.error("An error occurred during the request.");
+        console.error("Хүсэлт амжилтгүй.");
     };
     xhr.send();
 }
@@ -77,10 +77,11 @@ function displayNewsDetail(xmlDoc, id) {
             ${imageUrls.length > 0 ? imageUrls.map(url => `<img src="${url}" alt="${title} image" class="news-detail-image" onerror="this.onerror=null; this.style.display='none'; console.error('Image failed to load: ' + this.src)" onload="this.classList.add('loaded')">`).join('') : ""}
             <h1>${title}</h1>
             <p>${description}</p>
-            <a href="${link}" target="_blank">Read Full Article</a>
+            <a href="index.html">Мэдээний хураангуй-руу буцах</a>
+
         `;
     } else {
-        document.getElementById("news-detail").textContent = "News item not found.";
+        document.getElementById("news-detail").textContent = "Мэдээ олдсонгүй.";
     }
 }
 

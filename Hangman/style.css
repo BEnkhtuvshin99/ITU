@@ -31,12 +31,26 @@ body {
     height: auto;
   }
   
-  .Question, .Instructions, .LivesLeft, .LettersGuessed {
+  .Question {
     margin: 10px 0;
     padding: 10px;
     text-align: center;
   }
-  
+  .Instructions{
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+  }
+  .LettersGuessed {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+  }
+  .LivesLeft {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+  }
   .Question p, .Instructions p, .LivesLeft p, .LettersGuessed p {
     margin: 0;
     font-size: 1.2em;
